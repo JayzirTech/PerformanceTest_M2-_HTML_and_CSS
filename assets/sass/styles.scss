@@ -52,15 +52,30 @@ h2 {
                 font-weight: bold;
             }
         }
+
+        @media (max-width: 768px) {
+            display: none;
+        }
     }
 
     .menu-toggle {
         opacity: 0;
+        background-color: #0b0b0f;
+        color: beige;
+        font-size: 2rem;
+
+        @media (max-width: 768px) {
+            opacity: 1;
+
+            margin-left: auto;
+            margin-right: 1rem;
+            padding: .5rem;
+        }
     }
 }
 
 .hero {
-    background-image: url("/assets/img/img-9.jpg");
+    background-image: url("./assets/img/img-9.jpg");
     background-size: cover;
     background-position: center;
     height: 39rem;
@@ -232,7 +247,7 @@ h2 {
     height: 6rem;
     background-color: black;
 
-    p{
+    p {
         margin-left: 1rem;
     }
 
@@ -248,6 +263,20 @@ h2 {
         }
     }
 }
+
+#GoToTop {
+    display: none;
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    z-index: 99;
+
+    padding: .5rem;
+    background-color: #0b0b0f;
+    color: beige;
+    font-size: 2rem;
+}
+
 
 /* Puedes usar esto si quieres centrar contenido */
 /* .container {

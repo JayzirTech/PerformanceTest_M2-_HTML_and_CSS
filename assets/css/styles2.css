@@ -51,12 +51,28 @@ h2 {
   text-decoration: underline;
   font-weight: bold;
 }
+@media (max-width: 768px) {
+  .header .nav {
+    display: none;
+  }
+}
 .header .menu-toggle {
   opacity: 0;
+  background-color: #0b0b0f;
+  color: beige;
+  font-size: 2rem;
+}
+@media (max-width: 768px) {
+  .header .menu-toggle {
+    opacity: 1;
+    margin-left: auto;
+    margin-right: 1rem;
+    padding: 0.5rem;
+  }
 }
 
 .hero {
-  background-image: url("/assets/img/img-9.jpg");
+  background-image: url("./assets/img/img-9.jpg");
   background-size: cover;
   background-position: center;
   height: 39rem;
@@ -224,6 +240,18 @@ h2 {
   .footer .social {
     display: block;
   }
+}
+
+#GoToTop {
+  display: none;
+  position: fixed;
+  bottom: 80px;
+  right: 20px;
+  z-index: 99;
+  padding: 0.5rem;
+  background-color: #0b0b0f;
+  color: beige;
+  font-size: 2rem;
 }
 
 /* Puedes usar esto si quieres centrar contenido */
